@@ -2,6 +2,7 @@ Caesar-Cipher-2
 ===============
 
 // Main
+
 $ cat ptext.txt | ./encode juliuscaeser
 
 	key: JULISCAERTVWXYZBDFGHKMNOPQ - 26
@@ -15,6 +16,7 @@ $ cat ctext.txt | ./decode juliuscaeser
 
 
 // Optional
+
 $ cat ptext.txt | ./encode juliuscaeser > ctext.txt
 	
 	key: JULISCAERTVWXYZBDFGHKMNOPQ - 26
