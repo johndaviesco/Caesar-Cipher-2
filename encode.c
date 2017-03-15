@@ -59,6 +59,7 @@ void buildtable (char* key, char* encode){
   //Gets start position and loops trought the alpha
   start = encode[strlen(encode)-1] - 'A';
   offset = start + 1;
+
   for(; offset != start;offset++){
     if(offset == 26){
       offset = 0;
@@ -77,7 +78,7 @@ int main(int argc, char **argv){
 
   // first allocate some space for our translation table.
 
-  char* encode = (char*)malloc(sizeof(char)*26);
+  char* encode = (char*)calloc(27, sizeof(char));
   char ch;
 
   if(argc != 2){
